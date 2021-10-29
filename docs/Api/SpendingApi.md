@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spendingList**
-> \Swagger\Client\Model\SpendingList spendingList($page, $per_page)
+> \Swagger\Client\Model\SpendingList spendingList($q, $page, $per_page)
 
 Lists all spending
 
@@ -85,11 +85,12 @@ $apiInstance = new Swagger\Client\Api\SpendingApi(
     new GuzzleHttp\Client(),
     $config
 );
+$q = ""; // string | 
 $page = 1; // int | 
 $per_page = 25; // int | 
 
 try {
-    $result = $apiInstance->spendingList($page, $per_page);
+    $result = $apiInstance->spendingList($q, $page, $per_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SpendingApi->spendingList: ', $e->getMessage(), PHP_EOL;
@@ -101,6 +102,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **q** | **string**|  | [optional]
  **page** | **int**|  | [optional] [default to 1]
  **per_page** | **int**|  | [optional] [default to 25]
 

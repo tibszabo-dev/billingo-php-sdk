@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Swagger\Client\Model\Spending[]**](Spending.md) |  | [optional] 
+**data** | [**\Swagger\Client\Model\SpendingListItem[]**](SpendingListItem.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **per_page** | **int** |  | [optional] 
 **current_page** | **int** |  | [optional] 
